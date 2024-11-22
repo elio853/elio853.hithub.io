@@ -1,0 +1,221 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>felxbox_01</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Inicio</a>
+          <a href="#secc2">Antecedentes</a>
+          <a href="#secc3">Ventajas</a>
+          <a href="#secc4">Desventajas</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>¿Adiós Dinero?</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>En los últimos años, la tendencia a la desaparición del efectivo se ha intensificado en
+					todo el mundo. Impulsados por la conveniencia, la seguridad y los rápidos avances en
+					la tecnología financiera, cada vez más consumidores y empresas eligen métodos de
+					pago digitales. </p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Desde aplicaciones de pago hasta criptomonedas, las alternativas al
+					efectivo están cambiando la forma en que realizamos transacciones. Este cambio no
+					sólo impacta la economía global, sino que también plantea interrogantes sobre la
+					privacidad, la inclusión financiera y el futuro de la política monetaria.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--texto para imagen a la izquierda-->
+	        		<p>La historia del dinero está llena de constantes transformaciones</p>
+	        		<!--texto para imagen a la derecha-->
+	        		<p></p>
+        		</div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<!--texto para la imagen-->
+	        		<p></p>
+	        		<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+	        		<!--texto para la imagen-->
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Antecedentes</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Desde el primer
+					trueque en las civilizaciones antiguas hasta la introducción de monedas y billetes, el
+					efectivo ha sido una herramienta esencial en el comercio. Sin embargo, con la llegada
+					de la tecnología digital a finales del siglo XX y principios del XXI, el uso del efectivo
+					comenzó a disminuir. La popularidad de las tarjetas de crédito y débito y el auge de
+					las plataformas de pago</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>En países como Suecia, donde la adopción de los pagos electrónicos ha sido
+					espectacular, incluso se debate la posibilidad de eliminar el efectivo como método
+					de pago. Esta evolución desencadenó cambios culturales y sociales, desafió los
+					conceptos tradicionales del dinero y creó nuevas oportunidades y riesgos para la
+					economía.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img2.png" title="Img 2">
+        		<!--texto para la imagen-->
+        		<p></p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Ventajas</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Conveniente: Los pagos digitales permiten realizar transacciones de forma rápida
+					y sencilla con cualquier carga.</p>
+
+				<p>Seguridad: Reduzca el riesgo de robo o pérdida, ya que los fondos digitales se
+						pueden proteger mediante contraseñas, autenticación biométrica y otros
+						métodos de seguridad.</p>
+
+				<p>Seguimiento financiero: Las transacciones digitales generan registros
+					automáticos, facilitando el control de gastos y presupuesto.</p>
+
+				<p>Reducir los costos operativos: Las empresas pueden reducir los gastos
+					administrativos.</p>
+
+				<p>Obtenga servicios financieros: Las plataformas digitales permiten que más
+					personas accedan a productos y servicios financieros.</p>
+					
+		        <br>
+		        <br>
+    		</div>
+    		
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Desventajas</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Exclusiones financieras: Es posible que muchas personas, especialmente aquellas
+					que viven en zonas rurales o de bajos ingresos, no tengan acceso a la tecnología
+					necesaria (como teléfonos inteligentes o Internet) para realizar pagos digitales, lo que
+					las excluye del sistema financiero.</p>
+
+					<p>Problemas de privacidad: Las empresas o los gobiernos pueden rastrear los datos
+					generados por las transacciones digitales, lo que genera serias preocupaciones sobre
+					la privacidad y la posibilidad de una vigilancia granular de la actividad.</p>
+
+					<p>Dependencias técnicas: La transición a sistemas sin efectivo aumenta la
+					dependencia de la tecnología.</p>
+
+					<p>Peligros en línea: eliminación del efectivo incrementa el riesgo de fraudes y robos.</p>
+
+					<p>Efectos en la economía informal: Muchas personas que trabajan en la economía
+					informal y comerciantes confían en el uso de efectivo. notar en su ausencia.</p>
+		        
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img4.png" title="Img 4">
+        		<!--texto para la imagen-->
+        		<p></p>
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	<!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="https://www.instagram.com/coventry_artt/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">Pagina Creada por Elias Joel Laguna Ramirez</p>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
